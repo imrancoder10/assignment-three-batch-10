@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assaignment Three Batch 10</title>
+    <!-- Font: Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Font: fontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind and DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        bgcolor_primary: '#ABEF5F',
+                        dark1: '#212121',
+                        dark2: '#494949',
+                        dark3: '#737373',
+                    },
+                    fontFamily: {
+                        'manrope': ['Manrope', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-manrope">
+    <!-- Header Section -->
+    <header class="bg-[#F4F4F4]">
+        <div class="w-11/12 xl:w-9/12 mx-auto">
+            <!-- Navbar starts here -->
+            <nav class="py-10">
+                <div class=" flex justify-between items-center">
+
+                    <!-- brand Name and arrow -->
+                    <div class="flex">
+                        <div class="rounded-full w-8 h-8 bg-bgcolor_primary text-center">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-black p-2"></i>
+                        </div>&nbsp; &nbsp;
+                        <a class="font-extrabold text-3xl">Rinterio</a>
+                    </div>
+                    <!-- navbar items -->
+                    <div>
+                        <div class="navbar-center hidden lg:flex border">
+                            <ul class="flex px-1 space-x-4">
+                                <li><a href="" class="text-dark2 text-base font-extrabold">Home</a></li>
+                                <li><a href="" class="text-dark3 text-base hover:font-extrabold">Services</a></li>
+                                <li><a href="" class="text-dark3 text-base hover:font-extrabold">Portfolio</a></li>
+                                <li><a href="" class="text-dark3 text-base hover:font-extrabold">Blogs</a></li>
+                                <li><a href="" class="text-dark3 text-base hover:font-extrabold">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- search, checkout,btn and dropdown menu -->
+                    <div class="flex">
+                        <!-- search, checkout and btn -->
+                        <div class="hidden md:block">
+                            <div class="flex flex-row border space-x-3 ">
+                                <div class="bg-white w-12 h-12 p-3 rounded-full border text-center text-dark3"><i
+                                        class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="bg-white w-12 h-12 p-3 rounded-full border text-center text-dark3"><i
+                                        class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <div class="">
+                                    <a class="btn bg-bgcolor_primary rounded-3xl font-extrabold text-xl text-dark1">Book
+                                        Consult
+                                        <div class="rounded-full w-8 h-8 bg-dark1 text-center">
+                                            <i class="fa-solid fa-arrow-right -rotate-45 text-white p-2"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- dropdown menu -->
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                                <li><a href="" class="text-dark2 text-base font-extrabold">Home</a></li>
+                                <li><a href="" class="text-dark3 text-base hover:font-extrabold">Services</a></li>
+                                <li><a href="" class="text-dark3 text-base hover:font-extrabold">Portfolio</a></li>
+                                <li><a href="" class="text-dark3 text-base hover:font-extrabold">Blogs</a></li>
+                                <li><a href="" class="text-dark3 text-base hover:font-extrabold">Contact Us</a></li>
+                                <li class="md:hidden"><a href=""><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+                                </li>
+                                <li class="md:hidden"><a href=""> <i class="fa-solid fa-cart-shopping"></i> checkout</a>
+                                </li>
+                                <li class="md:hidden"><div class="">
+                                    <a class="btn bg-bgcolor_primary rounded-3xl font-extrabold text-sm text-dark1">Book
+                                        Consult
+                                        <div class="rounded-full w-8 h-8 bg-dark1 text-center">
+                                            <i class="fa-solid fa-arrow-right -rotate-45 text-white p-2"></i>
+                                        </div>
+                                    </a>
+                                </div></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+
+            
+        </div>
+
+    </header>
+
+    <!-- main Section -->
+    <main></main>
+
+    <!-- footer section -->
+    <footer></footer>
+
+</body>
+
+</html>
